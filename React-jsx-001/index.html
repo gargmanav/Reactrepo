@@ -14,9 +14,15 @@
         <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
         <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
         <script>
-            const heading = React.createElement("h1", { id:"head", style:{color:"white"}}, "")
+            const heading = React.createElement("h1", 
+            { id:"head", style:{textAlign:"center",fontSize:"32"}
+        }, "The Evolution of Airbnb's Frontend")
+        const para = React.createElement("p",
+        {
+            style:{textAlign:"center",color:"white"}
+        },"@spikebrehm")
             const root = ReactDOM.createRoot(document.getElementById("root"))
-            root.render([heading]);
+            root.render([heading,para]);
         </script>
     </body>
     </html>
